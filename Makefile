@@ -211,6 +211,10 @@ update-contributors: ## Update the contributors
 		-e pyroscopebot \
 		-l 100 \
 		.
+	$(shell yarn bin contributor-faces) \
+		-e pyroscopebot \
+		-l 100 \
+		translations
 
 .PHONY: update-changelog
 update-changelog: ## Update the changelog
